@@ -12,50 +12,17 @@ In order to optimize production costs, some metallurgical plant  decided to redu
 You were asked to build a model that would predict the steel temperature of each ladle at the end of each batch. This would allow ladle overheating monitoring and prevent excessive heating to save energy.
 We do have the following data to begin with:
 
-* **shared/problem1-reg_data.csv** – данные о времени регистрации
+### **Data description**
 
-| reg_ts    |uid| 
-|-----------|---|
-| 906166566 | 2 | 
-| 906344325 | 2 | 
-| 906686169 | 2 | 
-| 906893386 | 2 | 
-| 906980227 | 2 | 
+Data consists from files received from various sources:
 
-* **shared/problem1-auth_data.csv** – данные о времени захода пользователей в игру
-
-| auth_ts   |uid| 
-|-----------|---|
-| 906166566 | 2 | 
-| 924422172 | 3 | 
-| 937374732 | 4 | 
-| 947425117 | 5 | 
-| 955630339 | 6 | 
-
-Функция должна быть написана на python. В ходе решения можно тестировать работу функции как на полном датасете, 
-так и на части (сэмпле) данных.
-
-### **Задача 2**
-
-Имеются результаты **A/B теста**, в котором двум группам пользователей предлагались различные наборы акционных предложений. Известно, что ARPU в тестовой группе выше на 5%, чем в контрольной. При этом в контрольной группе 1928 игроков из 202103 оказались платящими, а в тестовой – 1805 из 202667.
-
-Какой набор предложений можно считать лучшим? Какие метрики стоит проанализировать для принятия правильного решения и как?
-
-| user_id |revenue|testgroup| 
-|---------|-------|---------|
-| 1       | 0     |b        |
-| 2       | 0     |a        |
-| 3       | 0     |a        |
-| 4       | 0     |b        |
-| 5       | 0     |b        |
-
-### **Задача 3**
-
-В игре Plants & Gardens каждый месяц проводятся тематические события, ограниченные по времени. В них игроки могут получить уникальные предметы для сада и персонажей, дополнительные монеты или бонусы. Для получения награды требуется пройти ряд уровней за определенное время. С помощью каких метрик можно оценить результаты последнего прошедшего события?
-
-Предположим, в другом событии мы усложнили механику событий так, что при каждой неудачной попытке выполнения уровня игрок будет откатываться на несколько уровней назад. Изменится ли набор метрик оценки результата? Если да, то как?
-
-<hr>
+* **data_arc_new.csv** — data about electrodes;
+* **data_bulk_new.csv** — data about the supply of bulk materials (volume);
+* **data_bulk_time_new.csv** — data about the supply of bulk materials (time);
+* **data_gas_new.csv** — data on gas blowing through the alloy;
+* **data_temp_new.csv** — data about temperature measurement;
+* **data_wire_new.csv** — data about wire material (volume);
+* **data_wire_time_new.csv** — data about wire material (time);
 
 ### **Реализация проекта:**
 * Провела предварительный анализ (EDA) и предобработку данных. 
