@@ -1,4 +1,4 @@
-## **Project description**
+## **Project description:**
 
 In order to optimize production costs, a metallurgical plant decided to reduce energy consumption at the steel processing stage. We suposed to build a model that would predict the steel temperature of each ladle at the end of each batch. This would allow ladle overheating monitoring and prevent excessive heating to save energy and ultimately - money.
 
@@ -13,5 +13,3 @@ In order to optimize production costs, a metallurgical plant decided to reduce e
 ## **Project result:**
 
 LightGBM model was selected as the best model and checked on test data. Model MAE on test data was 6.18 and it is less than customer wanted so model was selected as appropriate. Customer will use that model for initial temperature prediction and future tuning (base model).
-
-<hr>
